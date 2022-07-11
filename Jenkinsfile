@@ -1,5 +1,5 @@
 pipeline {
-    agent none
+    node {
     stages {
         stage ('Example Build') {
             steps {
@@ -7,5 +7,6 @@ pipeline {
                 sh 'mvn -B -DskipTests clean package'
             }
         }
+    }
     }
 }
