@@ -9,7 +9,7 @@ pipeline {
         }
         stage ('Example Test') {
             steps {
-                'java -version'
+                'mvn --version'
             }
         }
     }
